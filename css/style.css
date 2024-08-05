@@ -29,11 +29,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 #logo {
   width: 100%;
   color: var(--dark);
+  font-weight: 600;
 }
 
 #nav-menu {
@@ -48,10 +50,17 @@ header {
   text-decoration: none;
   list-style: none;
   color: var(--dark);
+  font-weight: 400;
 }
 
 #nav-menu li a:hover {
   text-decoration: underline;
+  font-weight: 500;
+}
+
+#nav-menu li a:focus {
+  text-decoration: underline;
+  outline: none;
 }
 
 #theme-toggle {
@@ -80,8 +89,8 @@ header {
 
 #hero-text {
   text-align: center;
-  font-weight: bold;
-  font-size: 180px;
+  font-weight: 700;
+  font-size: 200px;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
@@ -188,27 +197,26 @@ header {
   color: #6941c6;
 }
 
+.recent-blog-title {
+  display: block;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.recent-blog-title:hover {
+  text-decoration: underline;
+}
+
 #recent-blogs-section-1 .recent-blog-title {
   margin-bottom: 8px;
   font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  display: block;
-  color: var(--dark);
 }
 
 #recent-blogs-section-1 .recent-blog-card:first-child .recent-blog-title,
 #recent-blogs-section-2 .recent-blog-title {
   margin-bottom: 12px;
   font-size: 24px;
-  display: block;
-  font-weight: 600;
-  text-decoration: initial;
-  color: var(--dark);
-}
-
-.recent-blog-title:hover {
-  text-decoration: underline;
 }
 
 .recent-blog-excerpt {
