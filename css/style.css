@@ -15,7 +15,7 @@
 }
 
 body {
-  margin: 0px 150px 0px 150px;
+  margin: 0px 200px 0px 200px;
 }
 
 header {
@@ -50,11 +50,16 @@ header {
   color: var(--dark);
 }
 
+#nav-menu li a:hover {
+  text-decoration: underline;
+}
+
 #theme-toggle {
   background-color: var(--dark);
   border-radius: 50px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 #theme-toggle span {
@@ -81,39 +86,162 @@ header {
   border-bottom: 1px solid lightgrey;
 }
 
-#recent-blogs {
-  margin-top: 30px;
-}
-
 #recent-blogs h2 {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 32px;
+  color: var(--dark);
 }
 
-#recent-blogs-grid {
+#recent-blogs-section-1 {
+  padding: 30px 0px 30px 0px;
+}
+
+#recent-blogs-section-1 .recent-blogs-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 32px;
 }
 
-.recent-blog-card {
-  display: flex;
-}
-
-.recent-blog-card:first-child {
+#recent-blogs-section-1 .recent-blog-card:first-child {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   flex-direction: column;
 }
 
-.recent-blog-card:nth-child(2) {
+#recent-blogs-section-1 .recent-blog-card:nth-child(2) {
   grid-column: 2 / 3;
 }
 
-.recent-blog-card:last-child {
-  grid-column: 1 / 3;
+#recent-blogs-section-1 .recent-blog-card:last-child {
+  grid-column: 2 / 3;
 }
 
-.recent-blog-card .recent-blog-thumbnail {
-  height: 228px;
+#recent-blogs-section-2 {
+  padding: 30px 0px 30px 0px;
+}
+
+#recent-blogs-section-2 .recent-blog-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.recent-blog-thumbnail {
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.recent-blog-thumbnail:hover {
+  filter: brightness(0.7);
+}
+
+#recent-blogs-section-2 .recent-blog-thumbnail {
+  grid-column: 1 / 2;
   width: 100%;
+  height: 246px;
+  border-radius: 5px;
+}
+
+#recent-blogs-section-2 .recent-blog-content {
+  grid-column: 2 / 3;
+}
+
+#recent-blogs-section-1 .recent-blog-card {
+  display: flex;
+}
+
+#recent-blogs-section-1 .recent-blog-card:nth-child(2),
+#recent-blogs-section-1 .recent-blog-card:nth-child(3) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+#recent-blogs-section-1 .recent-blog-card:nth-child(2) .recent-blog-thumbnail,
+#recent-blogs-section-1 .recent-blog-card:nth-child(3) .recent-blog-thumbnail {
+  grid-column: 1 / 2;
+}
+
+#recent-blogs-section-1 .recent-blog-card:nth-child(2) .recent-blog-content,
+#recent-blogs-section-1 .recent-blog-card:nth-child(3) .recent-blog-content {
+  grid-column: 2 / 3;
+}
+
+#recent-blogs-section-1 .recent-blog-thumbnail {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+#recent-blogs-section-1 .recent-blog-card:first-child .recent-blog-thumbnail {
+  width: 100%;
+  height: 228px;
+  margin-bottom: 32px;
+}
+
+#recent-blogs-section-1 .recent-blog-metadata,
+#recent-blogs-section-2 .recent-blog-metadata {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6941c6;
+}
+
+#recent-blogs-section-1 .recent-blog-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  color: var(--dark);
+}
+
+#recent-blogs-section-1 .recent-blog-card:first-child .recent-blog-title,
+#recent-blogs-section-2 .recent-blog-title {
+  margin-bottom: 12px;
+  font-size: 24px;
+  display: block;
+  font-weight: 600;
+  text-decoration: initial;
+  color: var(--dark);
+}
+
+.recent-blog-title:hover {
+  text-decoration: underline;
+}
+
+.recent-blog-excerpt {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+  line-height: 24px;
+}
+
+.recent-blog-categorie {
+  margin-right: 8px;
+  padding: 2px 10px 2px 10px;
+  border: none;
+  border-radius: 16px;
+}
+
+.recent-blog-categorie.violet {
+  color: #6941c6;
+  background-color: #f9f5ff;
+}
+
+.recent-blog-categorie.blue {
+  color: #3538cd;
+  background-color: #eef4ff;
+}
+
+.recent-blog-categorie.magenta {
+  color: #c11574;
+  background-color: #fdf2fa;
+}
+
+.recent-blog-categorie.green {
+  color: #027a48;
+  background-color: #ecfdf3;
 }
