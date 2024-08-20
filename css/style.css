@@ -379,13 +379,13 @@ header {
 }
 
 @media screen and (max-width: 1510px) {
-  body {
+  #website-content {
     margin: 0px 150px 0px 150px;
   }
 }
 
 @media screen and (max-width: 1272px) {
-  body {
+  #website-content {
     margin: 0px 100px 0px 100px;
   }
   #hero-text {
@@ -394,7 +394,7 @@ header {
 }
 
 @media screen and (max-width: 1182px) {
-  body {
+  #website-content {
     margin: 0px;
     padding-top: 20px;
   }
