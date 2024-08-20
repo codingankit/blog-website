@@ -18,141 +18,161 @@
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav id="navbar">
-        <h3 id="logo">Ankit Dutta</h3>
-        <ul id="nav-menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="newsletter.html">Newsletter</a></li>
-          <li id="theme-toggle">
-            <span class="material-symbols-rounded active"> light_mode </span
-            ><span class="material-symbols-rounded"> dark_mode </span>
-          </li>
-          <li id="menu-close">
-            <span class="material-symbols-rounded"> close </span>
-          </li>
-        </ul>
-        <span class="material-symbols-rounded" id="menu-icon"> menu </span>
-      </nav>
-      <h1 id="hero-text">THE BLOG</h1>
-    </header>
-    <main>
-      <section id="recent-blogs">
-        <div id="recent-blogs-section-1">
-          <h2 id="recent-blogs-heading">Recent blog posts</h2>
-          <div class="recent-blogs-cards">
+    <div id="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="website-content">
+      <header>
+        <nav id="navbar">
+          <h3 id="logo">Ankit Dutta</h3>
+          <ul id="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li id="theme-toggle">
+              <span class="material-symbols-rounded active"> light_mode </span
+              ><span class="material-symbols-rounded"> dark_mode </span>
+            </li>
+            <li id="menu-close">
+              <span class="material-symbols-rounded"> close </span>
+            </li>
+          </ul>
+          <span class="material-symbols-rounded" id="menu-icon"> menu </span>
+        </nav>
+        <h1 id="hero-text">THE BLOG</h1>
+      </header>
+      <main>
+        <section id="recent-blogs">
+          <div id="recent-blogs-section-1">
+            <h2 id="recent-blogs-heading">Recent blog posts</h2>
+            <div class="recent-blogs-cards">
+              <div class="recent-blog-card">
+                <a href="#">
+                  <img
+                    src="./images/recent-blog-1.png"
+                    class="recent-blog-thumbnail"
+                    loading="lazy"
+                /></a>
+                <div class="recent-blog-content">
+                  <div class="recent-blog-metadata">
+                    Ankit Dutta - 1 Jan 2023
+                  </div>
+                  <a href="#" class="recent-blog-title"
+                    >UX review presentation</a
+                  >
+                  <div class="recent-blog-excerpt">
+                    How do you create compelling presentations that wow your
+                    colleagues and impress your managers?
+                  </div>
+                  <div class="recent-blog-categories-group">
+                    <button class="recent-blog-categorie violet">Design</button
+                    ><button class="recent-blog-categorie blue">Research</button
+                    ><button class="recent-blog-categorie magenta">
+                      Presentation
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-blog-card">
+                <a href="#">
+                  <img
+                    src="./images/recent-blog-2.png"
+                    class="recent-blog-thumbnail"
+                    loading="lazy"
+                /></a>
+                <div class="recent-blog-content">
+                  <div class="recent-blog-metadata">
+                    Phoenix Baker - 1 Jan 2023
+                  </div>
+                  <a href="#" class="recent-blog-title"
+                    >Migrating to Linear 101</a
+                  >
+                  <div class="recent-blog-excerpt">
+                    Linear helps streamline software projects, sprints, tasks,
+                    and bug tracking. Here’s how to get...
+                  </div>
+                  <div class="recent-blog-categories-group">
+                    <button class="recent-blog-categorie blue">Design</button
+                    ><button class="recent-blog-categorie magenta">
+                      Research
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="recent-blog-card">
+                <a href="#">
+                  <img
+                    src="./images/recent-blog-3.png"
+                    class="recent-blog-thumbnail"
+                    loading="lazy"
+                /></a>
+                <div class="recent-blog-content">
+                  <div class="recent-blog-metadata">
+                    Lana Steiner - 1 Jan 2023
+                  </div>
+                  <a href="#" class="recent-blog-title"
+                    >Building your API Stack</a
+                  >
+                  <div class="recent-blog-excerpt">
+                    The rise of RESTful APIs has been met by a rise in tools for
+                    creating, testing, and manag...
+                  </div>
+                  <div class="recent-blog-categories-group">
+                    <button class="recent-blog-categorie green">Design</button
+                    ><button class="recent-blog-categorie magenta">
+                      Research
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="recent-blogs-section-2">
             <div class="recent-blog-card">
               <a href="#">
                 <img
-                  src="./images/recent-blog-1.png"
+                  src="./images/recent-blog-4.png"
                   class="recent-blog-thumbnail"
-                  loading="lazy"
+                  loading="l"
               /></a>
               <div class="recent-blog-content">
-                <div class="recent-blog-metadata">Ankit Dutta - 1 Jan 2023</div>
-                <a href="#" class="recent-blog-title">UX review presentation</a>
+                <div class="recent-blog-metadata">Olivia Rhye - 1 Jan 2023</div>
+                <a href="#" class="recent-blog-title">
+                  Grid system for better Design User Interface</a
+                >
                 <div class="recent-blog-excerpt">
-                  How do you create compelling presentations that wow your
-                  colleagues and impress your managers?
+                  A grid system is a design tool used to arrange content on a
+                  webpage. It is a series of vertical and horizontal lines that
+                  create a matrix of intersecting points, which can be used to
+                  align and organize page elements. Grid systems are used to
+                  create a consistent look and feel across a website, and can
+                  help to make the layout more visually appealing and easier to
+                  navigate.
                 </div>
                 <div class="recent-blog-categories-group">
                   <button class="recent-blog-categorie violet">Design</button
-                  ><button class="recent-blog-categorie blue">Research</button
                   ><button class="recent-blog-categorie magenta">
-                    Presentation
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="recent-blog-card">
-              <a href="#">
-                <img
-                  src="./images/recent-blog-2.png"
-                  class="recent-blog-thumbnail"
-                  loading="lazy"
-              /></a>
-              <div class="recent-blog-content">
-                <div class="recent-blog-metadata">
-                  Phoenix Baker - 1 Jan 2023
-                </div>
-                <a href="#" class="recent-blog-title"
-                  >Migrating to Linear 101</a
-                >
-                <div class="recent-blog-excerpt">
-                  Linear helps streamline software projects, sprints, tasks, and
-                  bug tracking. Here’s how to get...
-                </div>
-                <div class="recent-blog-categories-group">
-                  <button class="recent-blog-categorie blue">Design</button
-                  ><button class="recent-blog-categorie magenta">
-                    Research
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="recent-blog-card">
-              <a href="#">
-                <img
-                  src="./images/recent-blog-3.png"
-                  class="recent-blog-thumbnail"
-                  loading="lazy"
-              /></a>
-              <div class="recent-blog-content">
-                <div class="recent-blog-metadata">
-                  Lana Steiner - 1 Jan 2023
-                </div>
-                <a href="#" class="recent-blog-title"
-                  >Building your API Stack</a
-                >
-                <div class="recent-blog-excerpt">
-                  The rise of RESTful APIs has been met by a rise in tools for
-                  creating, testing, and manag...
-                </div>
-                <div class="recent-blog-categories-group">
-                  <button class="recent-blog-categorie green">Design</button
-                  ><button class="recent-blog-categorie magenta">
-                    Research
+                    Interface
                   </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div id="recent-blogs-section-2">
-          <div class="recent-blog-card">
-            <a href="#">
-              <img
-                src="./images/recent-blog-4.png"
-                class="recent-blog-thumbnail"
-                loading="lazy"
-            /></a>
-            <div class="recent-blog-content">
-              <div class="recent-blog-metadata">Olivia Rhye - 1 Jan 2023</div>
-              <a href="#" class="recent-blog-title">
-                Grid system for better Design User Interface</a
-              >
-              <div class="recent-blog-excerpt">
-                A grid system is a design tool used to arrange content on a
-                webpage. It is a series of vertical and horizontal lines that
-                create a matrix of intersecting points, which can be used to
-                align and organize page elements. Grid systems are used to
-                create a consistent look and feel across a website, and can help
-                to make the layout more visually appealing and easier to
-                navigate.
-              </div>
-              <div class="recent-blog-categories-group">
-                <button class="recent-blog-categorie violet">Design</button
-                ><button class="recent-blog-categorie magenta">
-                  Interface
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="all-blogs"></section>
-    </main>
+        </section>
+        <section id="all-blogs"></section>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,3 +1,10 @@
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.querySelector("#loader").style.display = "none";
+    document.querySelector("#website-content").style.display = "block";
+  }, 500);
+});
+
 const themeToggleBtn = document.querySelector("#theme-toggle");
 const body = document.querySelector("body");
 const themeIcons = document.querySelectorAll("#theme-toggle span");
