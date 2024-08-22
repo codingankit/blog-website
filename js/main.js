@@ -11,6 +11,8 @@ const themeIcons = document.querySelectorAll("#theme-toggle span");
 const navMenu = document.querySelector("#nav-menu");
 const menuIcon = document.querySelector("#menu-icon");
 const menuClose = document.querySelector("#menu-close");
+const websiteContent = document.querySelector("#website-content");
+const main = document.querySelector("main");
 
 themeToggleBtn.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
@@ -21,8 +23,7 @@ themeToggleBtn.addEventListener("click", () => {
 
 menuIcon.addEventListener("click", () => {
   navMenu.classList.add("active");
-  const bodyChildren = document.body.children;
-  Array.from(bodyChildren).forEach((element) => {
+  Array.from(websiteContent.children).forEach((element) => {
     if (
       element.tagName !== "HEADER" &&
       element.tagName !== "SCRIPT" &&
@@ -35,8 +36,7 @@ menuIcon.addEventListener("click", () => {
 
 menuClose.addEventListener("click", () => {
   navMenu.classList.remove("active");
-  const bodyChildren = document.body.children;
-  Array.from(bodyChildren).forEach((element) => {
+  Array.from(websiteContent.children).forEach((element) => {
     if (
       element.tagName !== "HEADER" &&
       element.tagName !== "SCRIPT" &&
@@ -45,4 +45,8 @@ menuClose.addEventListener("click", () => {
       element.style.display = "block";
     }
   });
+});
+
+window.matchMedia("(min-width: 814px)").addEventListener("change", (e) => {
+  if (e.matches) main.style.display = "block";
 });
